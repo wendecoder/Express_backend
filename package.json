@@ -1,12 +1,29 @@
 {
-  "name": "my-express-app",
+  "name": "Express_backend",
   "version": "1.0.0",
-  "description": "A simple express app",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./node_modules/.bin/netlify-lambda serve src",
+    "build": "./node_modules/.bin/netlify-lambda build src"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wendecoder/Express_backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wendecoder/Express_backend/issues"
+  },
+  "homepage": "https://github.com/wendecoder/Express_backend#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "netlify-lambda": "^2.0.16",
+    "nodemailer": "^6.9.1",
+    "serverless-http": "^3.2.0"
   }
 }
